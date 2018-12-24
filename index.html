@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trivia Game</title>
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Kanit:800" rel="stylesheet">
+    </head> 
+    <body>
+        <div id="content">
+            <header>
+                jQuery
+            </header>
+
+            <div id="contentWrapped">
+                <div id="startScreen">
+                    <p class="instructions">Test your knowledge of your favorite javaScript Library!</p>
+                    
+                    <p class="instructions">Answer each question before time runs out</p>
+                    
+                    <button class="button" id="buttonStart">Start Quiz</button>
+                </div>
+
+                <div id="quizSection">
+                    <div id="timer"></div>
+
+                    <div id="quiz">
+                        <div id="q1">
+                            <p id="qq1">Who developed jQuery?</p>
+                            <input type="radio" class="rad" name="developer" value="incorrect">John Richard<br>
+                            <input type="radio" class="rad" name="developer" value="incorrect">Mark Bensman<br>
+                            <input type="radio" class="rad" name="developer" value="correct">John Resig<br>
+                            <input type="radio" class="rad" name="developer" value="incorrect">Joffman Denieu
+                        </div>
+                        <div id="q2">
+                            <p id="qq2">JQuery is a </p>
+                            <input type="radio" class="rad" name="library" value="correct">JavaScript Library<br>
+                            <input type="radio" class="rad" name="library" value="incorrect">JavaScript Language<br>
+                            <input type="radio" class="rad" name="library" value="incorrect">JavaScript Method<br>
+                            <input type="radio" class="rad" name="library" value="incorrect">PHP Method
+                        </div>
+                        <div id="q3">
+                            <p id="qq3">JQuery was first released in which year?</p>
+                            <input type="radio" class="rad" name="year" value="incorrect">2001<br>
+                            <input type="radio" class="rad" name="year" value="incorrect">2004<br>
+                            <input type="radio" class="rad" name="year" value="incorrect">2008<br>
+                            <input type="radio" class="rad" name="year" value="correct">2006
+                        </div>
+                        <div id="q4">
+                            <p id="qq4">What scripting language is jQuery written in?</p>
+                            <input type="radio" class="rad" name="Language" value="incorrect">C++<br>
+                            <input type="radio" class="rad" name="Language" value="correct">JavaScript<br>
+                            <input type="radio" class="rad" name="Language" value="incorrect">C#<br>
+                            <input type="radio" class="rad" name="Language" value="incorrect">HTML
+                        </div>
+                    </div>
+
+                    <button class="button" id="submit">Submit</button>
+                </div>
+
+                <div id="results">
+                    <p id="timeLeft"></p>
+
+                    <p id="score"></p>
+
+                    <button class="button" id="Reset">Reset Game</button>
+                </div>
+            </div>
+        </div>
+       
+
+
+        
+        <!-- javaScript -->
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </body>
+</html>
