@@ -38,6 +38,7 @@ $("#Reset").click(function() {
     $("#score").text(score);
 })
 
+
 // "start" function sets an interval that runs the decrement function once a second.
 function start() {
     clearInterval(intervalId);
@@ -50,6 +51,13 @@ function decrement() {
 
     if (number === 0) {
         stop()
+        $("#quizSection").hide();
+        $("#results").show();
+        correct();
+        pointsPlus();
+        $("#timeLeft").text("Time Remaining: " + number + " Seconds");
+        $("#score").text("Your Score: " + score );
+        uncheckRadios();
     }
 
     // Show the number in the #timer tag.
